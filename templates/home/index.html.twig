@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fondation Barke Beidari{% endblock %}
+
+{% block body %}
+    <main>
+        <!-- hero banner -->
+        <section class="hero_banner">
+            <div class="overlay">
+                <div class="banner_content">
+                </div>
+            </div>
+        </section>
+
+        <!-- donate plan -->
+        <section class="donate_plan">
+            <div class="section_details">
+                <h1>Pourquoi F3B ?</h1>
+                <p>Afin de perpétuer les idéaux, la vision et tout l’espoir que suscitait Feu El Hadj Hamadoun Tamboura</p>
+            </div>
+            <div class="donate_carts">
+                <div class="cart_items">
+                    <img src="{{ asset('images/icons/agriculteur.png') }}" alt="food">
+                    <h2>Food for a family</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.</p>
+                </div>
+
+                <div class="cart_items">
+                    <img src=" {{ asset('images/icons/lis.png') }}" alt="shelter">
+                    <h2>Shelter for a family</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.</p>
+                </div>
+
+                <div class="cart_items">
+                    <img src="{{ asset('images/icons/stethoscope.png') }}" alt="Frame">
+                    <h2>Education for a child</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit.</p>
+                </div>
+            </div>
+
+            <!-- Donate Today -->
+            <section class="donate">
+                <div class="section_details">
+                    <h1>Donner aujourd'hui</h1>
+                    <p>Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli <br> deterruisset. No duo
+                        populo
+                        animal noluisse, enim</p>
+                </div>
+                <div class="donate_amount">
+                    <div class="amount">
+                        <span>100cfa</span>
+                        <span>200cfa</span>
+                        <span>500cfa</span>
+                        <span>1000cfa</span>
+                    </div>
+                    <p>Autre montant (Cfa)</p>
+                </div>
+                <button class="btn_primary">Donner</button>
+            </section>
+
+            <div class="donate_details">
+                <div class="donate_des_box">
+                    <div class="donate_content">
+                        <h2>Their lives depend on <br> your donation</h2>
+                        <p>Lorem ipsum dolor sit amet, usu cu esse possit <br> referrentur, at eam falli deterruisset.
+                            No duo populo <br> animal noluisse, enim</p>
+
+                        <p>Lorem ipsum dolor sit amet, usu cu esse possit <br> referrentur, at eam falli deterruisset.
+                        </p>
+
+                        <button class="btn_primary lire">
+                            Lire
+                        </button>
+                    </div>
+                    <img src="{{ asset('images/destine.jpg') }}" alt="donate">
+                </div>
+
+                <div class="donate_des_box">
+                    <img src="{{ asset('images/deplaces.jpeg') }}" alt="donate">
+                    <div class="donate_content">
+                        <h2>They need us <br> to suvive</h2>
+                        <p>Lorem ipsum dolor sit amet, usu cu esse possit <br> referrentur, at eam falli deterruisset.
+                            No duo populo <br> animal noluisse, enim</p>
+
+                        <p>Lorem ipsum dolor sit amet, usu cu esse possit <br> referrentur, at eam falli deterruisset.
+                        </p>
+                        <button class="btn_primary lire">
+                            Lire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- get my updates -->
+        <section class="updates">
+            <div class="section_details">
+                <h1>Get My Updates</h1>
+                <p>Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli <br> deterruisset. No duo
+                    populo
+                    animal noluisse, enim</p>
+            </div>
+
+            <div class="subscribe_box">
+                <div class="subscribe">
+                    <input type="email" placeholder="Email">
+                    <button class="btn_subscribe">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

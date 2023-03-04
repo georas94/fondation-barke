@@ -14,7 +14,12 @@
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+###> phpstorm ###
+/.idea/fondation-barke.iml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/.gitignore
+/.idea/php.xml
+/.idea/phpunit.xml
+/.idea/dictionaries/rashidtamboura.xml
+###< phpstorm ###
