@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: eu-west-3
   ECR_REPOSITORY: fondation-barke-test
-  ECS_SERVICE: ec2ServiceFondationBarkev1
+  ECS_SERVICE: ec2ServiceFondationBarkev2
   ECS_CLUSTER: ec2Clusterv1
   ECS_TASK_DEFINITION: .github/workflows/td.json
 
