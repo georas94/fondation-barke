@@ -97,15 +97,14 @@
 
                 <div class="donate_des_box">
                     <div class="donate_content">
-                        <h2>Début de nos <br> activités</h2>
+                        <h2>À remplir plus tard</h2>
                         <p>
-                            Cet ouvrage rappel à l’homme que la vie est une école. Ce livre est le résumé de la vie
-                            de El Hadji Tamboura. Hamadou Tamboura a une riche carrière professionnelle qui lui permet
-                            de découvrir l’homme. Il s’est investi dans la formation des jeunes. L’ouvrage nous renseigne également
-                            sur la foi de El Hadji Tamboura. L’ouvrage se termine par son rêve. L’ouvrage présente le courage,
-                            l’endurance, l’engagement dans le travail bien fait, l’honnêteté et l’amour de son village
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis finibus orci, vitae iaculis
+                            nisl consequat quis. Ut at nulla molestie, vestibulum massa pharetra, tempor ipsum. Proin id lectus
+                            nec elit tempor luctus. Vestibulum sed sapien elit. Vivamus non leo tempus, sodales magna nec,
+                            tempus ante. Donec sit amet quam tellus
                         </p>
-                        <a type="button" class="btn_primary lire text-center text-secondary" href="{{ path('debut_activites') }}">
+                        <a type="button" class="btn_primary lire text-center text-secondary" href="#">
                             Lire
                         </a>
                     </div>
@@ -122,24 +121,41 @@
             </div>
             <div class="donate_amount">
                 <div class="amount">
-                    <span>100cfa</span>
-                    <span>200cfa</span>
-                    <span>500cfa</span>
-                    <span>1000cfa</span>
+                    <span class="amount-item">100cfa</span>
+                    <span class="amount-item">200cfa</span>
+                    <span class="amount-item">500cfa</span>
+                    <span class="amount-item">1000cfa</span>
                 </div>
                 <input class="donation-input" name="donation-input" id="donation-input" type="text" placeholder="Autre montant (Cfa)"/>
             </div>
             <button class="btn_primary">Donner</button>
         </section>
 
-        <!-- get my updates -->
-        <section class="history pt-3" id="history">
+        <!-- history -->
+        <section class="history pt-3 mt-5" id="history">
             <div class="section_details">
-                <h1>A propos de l'association</h1>
-                <div style="background-color: rgba(79, 157, 166, 0.1)" class="cart_items mt-3 mr-5 ml-5">
-                    <img src="{{ asset('images/icons/agriculteur.png') }}" alt="food">
-                    <h2>Pour l'agriculture</h2>
-                    <p>Contribuer à l’amélioration de la sécurité alimentaire et sanitaire des populations à travers nos actions</p>
+                <h1>À propos de l'association</h1>
+                <div style="background-color: rgba(79, 157, 166, 0.1);margin-right: 15%;margin-left: 15%;" class="cart_items cart_items_history mt-3">
+                    <img src="{{ asset('images/icons/nouvelle-annee.png') }}" alt="food">
+                    <h2>Création de l'association</h2>
+                </div>
+                <div style="background-color: rgb(79 157 166 / 24%);margin-right: 15%;margin-left: 15%;" class="cart_items cart_items_history mt-3">
+                    <img src="{{ asset('images/icons/team.png') }}" alt="food">
+                    <h2>Membres fondateurs</h2>
+                    <div class="cart_items_history_founders d-flex justify-content-between mt-5">
+                       <div>
+                           <img src="{{ asset('images/founder1.jpg') }}" alt="">
+                           <h4 class="mt-2">TAMBOURA <br> Djiblil</h4>
+                       </div>
+                       <div>
+                           <img src="{{ asset('images/founder2.jpg') }}" alt="">
+                           <h4 class="mt-2">SONDO/TAMBOURA<br> Fatimata Nènè</h4>
+                       </div>
+                    </div>
+                </div>
+                <div style="background-color: rgba(79, 157, 166, 0.1);margin-right: 15%;margin-left: 15%;" class="cart_items cart_items_history mt-3">
+                    <img src="{{ asset('images/icons/balance.png') }}" alt="food">
+                    <h2 class="mt-2">Forme juridique</h2>
                 </div>
             </div>
         </section>

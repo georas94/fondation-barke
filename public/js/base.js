@@ -1,28 +1,30 @@
 $( document ).ready(function() {
+    const navbar = document.querySelector('.navbar');
     const showOnPx = 100;
     const backToTopButton = document.querySelector(".back-to-top");
     const pageProgressBar = document.querySelector(".progress-bar");
-    const navbar = document.querySelector('.navbar');
-    navbar.style.display = "none";
+    let addClass = 'color';
+    let amountItem = $('.amount-item');
+    let amountItemChild2 = $('.amount :nth-child(2)');
 
     const scrollContainer = () => {
+
         return document.documentElement || document.body;
     };
-
     const goToTop = () => {
+
         document.body.scrollIntoView({
             behavior: "smooth"
         });
     };
 
-    document.addEventListener("scroll", () => {
-        console.log("Scroll Height: ", scrollContainer().scrollHeight);
-        console.log("Client Height: ", scrollContainer().clientHeight);
+    navbar.style.display = "none";
+    amountItemChild2.addClass(addClass);
 
-        const scrolledPercentage =
-            (scrollContainer().scrollTop /
-                (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
-            100;
+    document.addEventListener("scroll", () => {
+        const scrolledPercentage = (
+            scrollContainer().scrollTop / (scrollContainer().scrollHeight - scrollContainer().clientHeight)
+        ) * 100;
 
         pageProgressBar.style.width = `${scrolledPercentage}%`;
 
@@ -40,6 +42,20 @@ $( document ).ready(function() {
     });
 
     backToTopButton.addEventListener("click", goToTop);
+
+    let $cols = amountItem.click(function(e) {
+        if ($('#donation-input').val() === ''){
+            $cols.removeClass(addClass);
+            $(this).addClass(addClass);
+        }
+        if ($('#donation-input').val() !== ''){
+            $cols.removeClass(addClass);
+        }
+    });
+
+    $('#donation-input').click(function () {
+        amountItem.removeClass(addClass)
+    });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

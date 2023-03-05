@@ -1,8 +1,11 @@
 * {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Roboto', sans-serif;
+}
 /* common styles */
 .btn_primary {
     font-size: 20px;
@@ -17,10 +20,12 @@
 .navbar {
     background-color: rgba(0, 0, 0, 0) !important;
     margin-top: 17%;
+    width: 8.5em;
 }
 
 .navbar-article {
     background-image: url("../images/navbar-home.png");
+    opacity: 75%;
 }
 
 .navbar-nav {
@@ -126,10 +131,10 @@
     border-radius: 5px;
 }
 
-.amount :nth-child(2) {
-    color: #FF5959;
-    background-color: #FFEEEE;
-    border: 2px solid #FF5959;
+.color {
+    color: #FF5959 !important;
+    background-color: #FFEEEE !important;
+    border: 2px solid #FF5959 !important;
 }
 
 .donate_amount p {
@@ -158,6 +163,10 @@
     background-color: rgba(79, 157, 166, 0.1);
     border-radius: 4px;
 }
+.cart_items_history_founders {
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
 .cart_items:nth-child(2) {
     background-color: rgba(255, 89, 89, 0.1);
@@ -182,6 +191,16 @@
 .cart_items img {
     height: 53px;
     width: 53px;
+}
+
+.cart_items_history img {
+    height: 100px;
+    width: 100px;
+}
+
+.cart_items_history_founders img {
+    height: 300px;
+    width: 300px;
 }
 
 .donate_details>.donate_des_box {
